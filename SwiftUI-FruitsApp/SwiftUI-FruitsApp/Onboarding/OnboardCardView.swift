@@ -10,36 +10,33 @@ import SwiftUI
 struct OnboardCardView: View {
     
     // MARK: - Properties
+    var fruit: Fruit
     @State private var isAnimating = false
+    
     
     // MARK: - Body
     var body: some View {
         ZStack {
             VStack(spacing: 20) {
-                // image
-                Image("blueberry")
+          
+                Image(fruit.image)
                     .resizable()
                     .scaledToFit()
                     .shadow(radius: 10)
                     .scaleEffect(isAnimating ? 1 : 0.6)
                 
-                // title
-                Text("Blueberry")
+                Text(fruit.title)
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .shadow(radius: 2)
                 
-                // headline
-                Text("Blueberries are sweet by nature and very beneficial for your body consumtion.")
+                Text(fruit.headline)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: 400)
                     .padding(.horizontal, 16)
                 
-                
-                
-                // start button
                 StartButtonView()
             }
         }
@@ -49,7 +46,7 @@ struct OnboardCardView: View {
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-        .background(LinearGradient(colors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")], startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(colors: fruit.gradientColors, startPoint: .top, endPoint: .bottom))
         .cornerRadius(20)
         .padding(.horizontal, 20)
     }
@@ -58,7 +55,7 @@ struct OnboardCardView: View {
 // MARK: - Preview
 struct OnboardCardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardCardView()
+        OnboardCardView(fruit: fruitsData[0])
             .previewLayout(.fixed(width: 320, height: 640))
     }
 }

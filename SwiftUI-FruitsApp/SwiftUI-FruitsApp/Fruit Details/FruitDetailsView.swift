@@ -12,7 +12,7 @@ struct FruitDetailsView: View {
     var fruit: Fruit
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 VStack(alignment: .center, spacing: 20) {

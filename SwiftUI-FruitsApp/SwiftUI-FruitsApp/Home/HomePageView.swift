@@ -9,10 +9,11 @@ import SwiftUI
 
 struct HomePageView: View {
     
+    @State private var isSettingOpened = false
     var fruits: [Fruit] = fruitsData
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(fruits) { fruit in
                 NavigationLink {
                     FruitDetailsView(fruit: fruit)
@@ -22,6 +23,18 @@ struct HomePageView: View {
                 }
             }
             .navigationTitle("Fruits")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isSettingOpened = true
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                }
+            }
+            .sheet(isPresented: $isSettingOpened) {
+                SettingsPageView()
+            }
         }
     }
 }

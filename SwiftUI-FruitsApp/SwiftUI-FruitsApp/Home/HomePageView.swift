@@ -9,8 +9,10 @@ import SwiftUI
 
 struct HomePageView: View {
     
+    // Use @State for simple properties that belong to a single view. They should usually be marked private.
     @State private var isSettingOpened = false
     var fruits: [Fruit] = fruitsData.shuffled()
+    
     
     var body: some View {
         NavigationView {

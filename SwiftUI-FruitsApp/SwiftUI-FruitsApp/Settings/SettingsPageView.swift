@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsPageView: View {
     
+    // @Environment: This is a value that is made available to your views through the application itself – it’s shared data that every view can read if they want to.
     @Environment(\.dismiss) var dismiss
     @AppStorage("isOnboarding") var isOnboarding = false
     

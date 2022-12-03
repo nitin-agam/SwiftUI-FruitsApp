@@ -10,10 +10,10 @@ import SwiftUI
 struct HomePageView: View {
     
     @State private var isSettingOpened = false
-    var fruits: [Fruit] = fruitsData
+    var fruits: [Fruit] = fruitsData.shuffled()
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             List(fruits) { fruit in
                 NavigationLink {
                     FruitDetailsView(fruit: fruit)

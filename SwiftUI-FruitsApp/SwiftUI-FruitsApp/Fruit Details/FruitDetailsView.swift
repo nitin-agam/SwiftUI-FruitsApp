@@ -12,7 +12,7 @@ struct FruitDetailsView: View {
     var fruit: Fruit
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 VStack(alignment: .center, spacing: 20) {
@@ -31,6 +31,7 @@ struct FruitDetailsView: View {
                         Text(fruit.headline)
                             .font(.headline)
                             .multilineTextAlignment(.leading)
+                            .lineSpacing(8)
                         
                         // nutrients
                         FruitNutrientsView(fruit: fruit)
@@ -43,6 +44,7 @@ struct FruitDetailsView: View {
                         // description
                         Text(fruit.description)
                             .multilineTextAlignment(.leading)
+                            .lineSpacing(8)
                         
                         // link
                         SourceLinkView()

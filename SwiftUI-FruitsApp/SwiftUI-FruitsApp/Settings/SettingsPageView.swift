@@ -87,6 +87,7 @@ struct SettingsPageView: View {
                         }
                     }
                 }
+                .padding()
             }
         }
     }

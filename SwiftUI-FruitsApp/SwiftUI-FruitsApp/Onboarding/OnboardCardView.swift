@@ -32,10 +32,12 @@ struct OnboardCardView: View {
                     .shadow(radius: 2)
                 
                 Text(fruit.headline)
+                    .font(.title3)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: 400)
                     .padding(.horizontal, 16)
+                    .lineSpacing(5)
                 
                 StartButtonView()
             }

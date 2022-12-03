@@ -34,6 +34,7 @@ struct FruitRowView: View {
                     .font(.callout)
                     .foregroundColor(.secondary)
                     .lineLimit(2)
+                    .lineSpacing(5)
             }
         }
     }

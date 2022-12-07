@@ -1,19 +1,14 @@
 # Fruits App
 
 <br>
-A small demo application created in SwiftUI using Xcode 14 is shown here. In this app, you will learn about some cool features of SwiftUI. 
+A small demo application created in SwiftUI using Xcode 14 is shown here. In this app, you will learn about some cool features of SwiftUI. If you are a beginner in SwiftUI, this app will help you to learn the basic concepts of SwiftUI. 
 
-<br>
-If you are a beginner in SwiftUI, this app will help you to learn the basic concepts of SwiftUI. 
-
-<br>
-
-
+<br><br>
 <p align="center">
     <img alt="Example article page" src="https://user-images.githubusercontent.com/12906999/206189927-557b0a9c-ece1-40e2-9be6-2db344bc29ff.png" width="800">
 </p>
 
-<br>
+<br><br>
 ### What features does this app contain:
 
 - Onboarding
@@ -32,7 +27,7 @@ If you are a beginner in SwiftUI, this app will help you to learn the basic conc
 and many other things...
 
 <br>
-> Following the [swiftuimasterclass.com](https://swiftuimasterclass.com/) courses, I learned and created this demo app. You should check out this website for amazing content. 
+Note: Following the [swiftuimasterclass.com](https://swiftuimasterclass.com/) courses, I learned and created this demo app. You should check out this website for amazing content. 
 
 </br>
 

@@ -5,6 +5,7 @@ A small demo application created in SwiftUI using Xcode 14 is shown here. In thi
 
 <br>
 If you are a beginner in SwiftUI, this app will help you to learn the basic concepts of SwiftUI. 
+
 <br>
 
 
@@ -13,7 +14,7 @@ If you are a beginner in SwiftUI, this app will help you to learn the basic conc
 </p>
 
 <br>
-#### What features does this app contain:
+### What features does this app contain:
 
 - Onboarding
 - Fruit List
@@ -21,7 +22,7 @@ If you are a beginner in SwiftUI, this app will help you to learn the basic conc
 - Settings
 - Light & Dark mode support
 
-#### What you can learn from this app:
+### What you can learn from this app:
 
 - How to create an application using Xcode 14 and SwiftUI 3.0?
 - How to create an Onboarding screen with PageTabView?
@@ -35,7 +36,7 @@ and many other things...
 
 </br>
 
-### Connect with me
+#### Connect with me
 
 Feel free to reach out if you have questions or if you want to contribute in any way:
 

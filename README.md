@@ -1,5 +1,9 @@
 # Fruits App
 
+<img src="https://user-images.githubusercontent.com/12906999/206189927-557b0a9c-ece1-40e2-9be6-2db344bc29ff.png" width="800">
+
+
+<br>
 A small demo application created in SwiftUI using Xcode 14 is shown here. In this app, you will learn about some cool features of SwiftUI. 
 
 If you are a beginner in SwiftUI, this app will help you to learn the basic concepts of SwiftUI. 
